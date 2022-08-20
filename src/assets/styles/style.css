@@ -1,0 +1,209 @@
+:root{
+    --primaryColor : #BD4B4B;
+    --secondaryColor : #F7F6E7;
+    --addColor:#377D71;
+    --textColor:#ffffff;
+    --defaultPadding:4px;
+    --defaultRadius:4px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--secondaryColor);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header{
+    display: flex;
+    padding: 10px;
+    margin: 0px;
+    height: 50px;
+    background-color: var(--primaryColor);
+    color: var(--textColor);
+    align-items: center;
+    flex-direction: row;
+}
+
+.header .search-bar  {
+    width: 100%;
+    margin-left: 3.5%;
+}
+.header .search-bar>input{
+    width: 40%;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.header .overlay{
+    position: fixed;
+}
+
+.header .search-bar input:focus {
+    outline: none;
+}
+
+.title-app{
+    width: 55%;
+    font-size:x-large;
+    font-weight: 600;
+}
+
+.content{
+    margin: 20px;
+}
+.notes-item{
+    padding: 12px;
+    width: 20%;
+    height: 100%;
+    margin: 8px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    background-color: var(--primaryColor);
+    color: var(--textColor);
+}
+
+.notes-item .title{
+    word-wrap: break-word;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.white-color{
+    color:white;
+}
+
+.notes-item .desc{
+    margin: 10px 0px;
+    word-wrap: break-word;
+    text-indent: 1em;
+    text-align: justify;
+}
+.notes-item .date{
+    font-weight: 200;
+    font-size: small;
+    margin: 10px 0px;
+    word-wrap: break-word;
+}
+
+.notes-item .button{
+    background-color: var(--addColor);
+    cursor: pointer;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.25);
+    margin: 8px;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.notes-item .button_items__container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.create-notes__container{
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: var(--primaryColor);
+    border-radius: 6px;
+    padding: 6px;
+    justify-content: end;
+}
+.create-notes__input{
+    display:flex;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 2px;
+    border-radius: 2px;
+    padding: 5px;
+    border-color: transparent;
+}
+.create-notes__desc {
+    padding: 5px;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    resize: none;
+    min-height: 40px;
+    line-height: 20px;
+    background-color: white;
+    border-radius: 2px;
+  }
+  
+  .create-notes__desc[contenteditable]:empty::before {
+    content: "Notes...";
+    color: gray;
+  }
+
+  .create-notes__button{
+    padding: var(--defaultPadding);
+    color: var(--textColor);
+    border-radius: var(--defaultRadius);
+    background-color: #377D71;
+    width: min-content;
+    margin-top: 4px;
+  }
+
+
+.hover:hover{
+    cursor: pointer;
+    background-color: var(--textColor);
+    color: black;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+.right{
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;  
+}
+
+.flex-grow1{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+.flex-grow1{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-red{
+    color:yellow;
+}
+
+.text-green{
+    color: #9cff1a;
+}
+
+.blur{
+    filter: blur(6px);
+}
